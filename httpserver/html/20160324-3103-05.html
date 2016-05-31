@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--
+    20160324-3103-05.html
+    by Kim Dongwoo
+   -->
+    <meta charset="utf-8">
+    <title>엥커 태그</title>
+  </head>
+
+  <body>
+    <p>
+      2016년 3월 24일 목요일 3103김동우
+    </p>
+    <a href="http://www.dimigo.hs.kr" title="한국디지털미디어고등학교" target="_blank">디미고로</a>
+    <br>
+    <a href="http://www.naver.com">
+      <img src="./img/03222.gif" alt="경로깨짐" title="어디론가 가겠지" />
+    </a>
+    <br>
+    <div id="longdiv">
+
+    </div>
+    <div class="imgdiv">
+        <img src="http://jhserver.dimigo.hs.kr/school.jpg" alt="경로가 깨졌습니다." usemap="#img3103" width="600px" height="400px"/>
+        <div class="imgindiv">
+          <span>글자수</span>
+        </div>
+    </div>
+
+    <map name="#img3103">
+      <area shape="rect" coords="300, 300, 600, 400" href="http://www.dimigo.hs.kr" />
+      <area shape="rect" coords="100, 100, 600, 400" href="#" />
+    </map>
+
+    <!-- target 속성
+    self -> this frame
+    blank -> new window
+    top-> full window
+    parent -> parent frame -->
+
+    <!-- a teg -> href : address(of page) -->
+
+  </body>
+</html>
+<style>
+  html{
+    font-family: sans-serif, NanumGothic, Dothum;
+
+  }
+  body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #a6f2cb;
+  }
+
+  p{
+    border-bottom: 1px dashed blue;
+    padding-bottom: 4px;
+
+  }
+  #longdiv{
+    width: 100%;
+    height: 1000px;
+    background-color: #57493D;
+  }
+
+  .menup{
+    margin-left: 11px;
+    margin-right: 8px;
+    padding-left: 3px;
+    padding-right: 2px;
+
+  }
+  .imgindiv{
+    display: inline;
+    padding-top: 10px;
+    padding-left: 20px;
+
+
+  }
+
+</style>

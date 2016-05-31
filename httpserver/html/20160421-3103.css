@@ -1,0 +1,114 @@
+/*3103 김동우 20160421-3103.css*/
+
+body{
+  font-family: NanumGothic;
+  font-size: 10pt;
+
+}
+
+.button, input{
+  border: 1px solid white;
+  color: white;
+  background-color: #EE008C;
+  margin-bottom: 5px;
+
+}
+.button{
+  padding: 3px 5px;
+  /*border-top: 10px;*/
+}
+.button:hover{
+  border: 1px solid #EE008C;
+  color: #EE008C;
+  background-color: white;
+  animation-name: ani1;
+  animation-duration: 0.25s;
+
+}
+
+@keyframes ani1{
+
+  from {
+		background: none;
+		color: #EE008C;
+	}
+	to {
+		background-color: white;
+		color: #EE008C;
+	}
+}
+
+
+
+#container{
+  width: 740px;
+  background-color: #EDEDED;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid blue;
+  position: relative;
+}
+#side1{
+  width: 150px;
+  height: 100px;
+  padding: 5px;
+  border: 2px dashed red;
+  background-color: #8b0000;
+  margin: 10px;
+  /*display: inline-block;*/
+  float: left;
+}
+#side2{
+  width: 150px;
+  height: 100px;
+  padding: 5px;
+  border: 2px dashed red;
+  background-color: red;
+  margin: 10px;
+  /*display: inline-block;*/
+  float: left;
+  color: white;
+}
+#side3{
+  width: 150px;
+  height: 100px;
+  padding: 5px;
+  border: 2px dashed red;
+  background-color: pink;
+  margin: 10px;
+  /*display: inline-block;*/
+  float: left;
+}
+#side4{
+  width: 150px;
+  height: 100px;
+  padding: 5px;
+  border: 2px dashed red;
+  background-color: blue;
+  margin: 10px;
+  /*display: inline-block;*/
+  float: left;
+  color: white;
+}
+#footer, footer{
+  clear: both;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+#loginbox{
+  position: absolute;
+  top: 10px;
+  left: 750px;
+  width: 180px;
+  height: 150px;
+  background-color: #EE008C;
+}
+p{
+  text-align: center;
+}
+.sub{
+  border-bottom: solid 2px #EE008C;
+  font-weight: bold;
+}

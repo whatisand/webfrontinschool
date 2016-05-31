@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>3103 김동우 Tooltip</title>
+    <style>
+      .tooltip1{
+        position: relative;
+        top: 100px;
+        left: 200px;
+        display: inline-block;
+        border-bottom: 1px dashed black;
+      }
+      .tooltip1 .tooltiptext{
+        visibility: hidden;
+        /*display: none;*/
+        width: 120px;
+        border-radius: 6px;
+        padding: 5px;
+
+        background-color: black;
+        color: white;
+        text-align: center;
+
+        position: absolute;
+         /*visible bottom style*/
+        top: 100%;
+        left: 50%;
+        /*margin-left: -60px*/
+        margin-left: -50px;
+
+        /*visible top style
+        bottom: 100%;
+        left: 50%;
+        margin-left: -60px;*/
+
+        /* visible right style
+        top:-5px;
+        left: 105%;*/
+
+        /* visble left style
+        top: -5px;
+        right: 105%;*/
+      }
+
+      .tooltip1 .tooltiptext::after{
+        content: " ";
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent black  transparent;
+        /*background-color: blue;*/
+
+      }
+
+      .tooltip1:hover .tooltiptext{
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tooltip1">
+      Hover me!!
+      <span class="tooltiptext">Tooltiptext</span>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+/*e3103.css*/
+
+body{
+  margin: 0 auto;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+#d01{
+  width: 800px;
+  height: 800px;
+  background: #dedede;
+  /*margin-top: 20px;*/
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  position: relative;
+}
+
+#d03 input{
+
+}
+
+#d02{
+  background-color: #ee008c;
+  padding: 10px;
+  height : 100px;
+  margin: 10px;
+
+}
+
+#d03{
+  background-color: #eee;
+  width: 450px;
+  padding: 10px;
+  margin: 0px 10px 10px 0px;
+  float: right;
+
+}
+
+#d04{
+  width: 280px;
+  margin: 0px 0px 10px 10px;
+  background-color: skyblue;
+  padding: 10px;
+  float: left;
+}
+
+#d05{
+  clear: both;
+  height: 500px;
+  background-image:url('http://jhserver.dimigo.hs.kr/school.jpg');
+  margin: 0px 10px 10px 10px;
+}
+
+#d06{
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+#d07{
+  position: fixed;
+  top: 100px;
+  left: 100px;
+  width: 135px;
+  height: 140px;
+  background-image: url('http://jhserver.dimigo.hs.kr/dimigo.png');
+
+}
+
+#headtypo{
+  font-family: cursive;
+  text-align: center;
+  font-size: 20pt;
+
+}

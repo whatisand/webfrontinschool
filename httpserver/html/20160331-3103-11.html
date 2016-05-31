@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p id="pbtm">
+
+    </p>
+    <div id="loginbox">
+      <fieldset>
+        <legend>3103김동우</legend>
+        <!-- name : name of form  -->
+        <!-- method : get or post -->
+        <!-- action : an address wrtten by server-side language -->
+        <form class="e3103" action="e3103.php" method="get">
+          <input type="text" name="id" value="" size="12" maxlength="20" required="" autofocus="">
+          <input type="password" name="pw" value="">
+          <input type="submit" name="sub" value="submit">
+          <input type="reset" name="rec" value="reset">
+          <br>
+          <!-- radio is like a checkbox, but we can choice only one item -->
+          eb<input type="radio" name="a" value="eb" checked="">
+          dc<input type="radio" name="a" value="dc">
+          wp<input type="radio" name="a" value="wp">
+          hd<input type="radio" name="a" value="hd">
+          <br>
+          <!-- checkbox is a checkbox. we can choice more then one item, also all item -->
+          <input type="checkbox" name="want" value="seoul" checked="">seoul
+          <input type="checkbox" name="want" value="kora">korea
+          <input type="checkbox" name="want" value="dimi">dimi
+          <br>
+          <input type="file" name="file" value="">
+          <input type="email" name="email" placeholder="abc123@example.com" required="">
+          <input type="hidden" name="faf" value="faf">
+        </form>
+      </fieldset>
+    </div>
+  </body>
+</html>
+<style media="screen">
+  body{
+
+    margin: 0;
+    width: 100%;
+    font-family: sans-serif;
+
+  }
+  #loginbox{
+    background-color: #FFF;
+
+  }
+  #pbtm{
+    border-bottom: solid 2px green;
+  }
+</style>

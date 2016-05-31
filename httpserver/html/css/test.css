@@ -1,0 +1,156 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:100,300,400);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,500,300);
+
+html{
+
+	height: 100%;
+	width: 100%;
+
+}
+
+body{
+
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	background-color: #DDD;
+}
+
+#logoContainer {
+
+	width : 200px;
+	height: 200px;
+
+	padding:10px;
+
+	background-color:white;
+
+	margin: 0 auto;
+	margin-top: 160px;
+	margin-bottom: 40px;
+
+	border-radius: 200px;
+	box-shadow: 0 0 10px white;
+
+}
+
+#logoimg{
+
+	border-radius: 140px;
+	background-image:url('../img/logo.jpg');
+
+}
+
+#highestimg{
+
+	padding:10px;
+	height: 120%;
+	background-image:url('../img/background.jpg');
+	box-sizing : border-box;
+	background-position: center center;
+	background-size: 100% 100%;
+	overflow: hidden;
+
+}
+
+#highesttext1 {
+
+	font-family: 'Roboto';
+	font-size: 50pt;
+	font-weight: 100;
+	text-align: center;
+	color: white;
+
+}
+
+.homeind{
+
+	font-family: 'Ubuntu';
+	font-size: 28pt;
+	font-weight: 100;
+
+}
+
+
+#highesttext2 {
+
+	font-size: 20pt;
+	font-weight: 100;
+
+}
+
+#menubar{
+
+	display: inline-block;
+	height: 96px;
+	padding: 20px;
+	box-sizing : border-box;
+	border-top: 100px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+#centers{
+
+	text-align: center;
+
+
+}
+
+#menucon{
+
+
+	display: inline-block;
+	width: 200px;
+	height: 50px;
+	font-family: 'Roboto';
+	font-size: 22pt;
+	font-weight: 300;
+	color : #FFF;
+	border: 3px solid #FFF;
+	padding-top: 5px;
+	box-sizing : border-box;
+	text-align: center;
+	margin-right: 38px;
+	cursor: pointer;
+
+}
+
+
+
+.homecontant{
+
+	padding: 10px;
+	padding-top: 25px;
+
+	background-color: #FFF;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	font-family: 'Roboto';
+
+
+
+}
+
+.centerss{
+
+	align-content: center;
+	text-align: center;
+
+}
+
+#circle{
+	border-radius: 9999px;
+	background-color: #497;
+	width: 100px;
+	height: 100px;
+}
+
+#home{
+
+	padding-top: 20px;
+	height: 1000px;
+	text-align: center;
+
+}

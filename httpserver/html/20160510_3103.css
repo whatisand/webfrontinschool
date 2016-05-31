@@ -1,0 +1,84 @@
+/*3103 김동우*/
+
+.backcont3103{
+  margin: 0 auto;
+  width: 800px;
+  height: 800px;
+  background-color: #888;
+  position: relative;
+  padding: 5px;
+}
+.header3103{
+  height: 160px;
+  background-color: #ee008c;
+  margin: 5px;
+  padding: 10px;
+}
+.logincont3103{
+  width: 420px;
+  margin: 5px;
+  padding: 10px;
+  background-color: #c2185b;
+  /*float: left;*/
+  display: inline-block;
+}
+.inimgbox3103{
+  height: 500px;
+  margin: 5px;
+  background-image: url('http://jhserver.dimigo.hs.kr/school.jpg');
+  background-size: 100%;
+}
+.insidenumber3103{
+  width: 320px;
+  /*margin: 5px;*/
+  padding: 10px;
+  display: inline-block;
+  background-color: #AAA;
+  position: relative;
+  /*float: right;*/
+
+}
+.side13103{
+  background-color: #AAA;
+  top: 0px;
+  left: 820px;
+  position: absolute;
+  width: 100px;
+  height: 790px;
+  padding: 10px;
+}
+.side13103 p{
+  border-bottom: solid 1px black;
+}
+.side13103 table{
+  width: 100%;
+  height: 93%;
+}
+
+.footer3103{
+  color: white;
+  background-color: #222;
+  padding: 5px;
+
+  margin: 20px 5px 10px 5px;
+  text-align: center;
+}
+.footer3103 a{
+  text-decoration: none;
+  color: white;
+
+}
+.footer3103 a:hover{
+  text-decoration: none;
+  color: #ee008c;
+
+}
+.fix3103{
+  position: fixed;
+  width: 140px;
+  height: 140px;
+  top: 50px;
+  left: 100px;
+  background-color: white;
+
+}

@@ -1,0 +1,26 @@
+/*css for web*/
+
+
+p{
+  text-align: center;
+}
+
+#i01{
+  color: blue;
+
+}
+
+#i02{
+  background-color: yellow;
+  width: 300px;
+  height: 300px;
+  position: fixed;
+  top: 150px;
+  left: 150px;
+
+}
+
+
+.c01{
+  background-color: #11740f;
+}

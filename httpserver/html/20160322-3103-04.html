@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--
+    20160322-3103-04.html
+    by Kim Dongwoo
+   -->
+    <meta charset="utf-8">
+    <title>3103 목록과 이미지</title>
+  </head>
+  <body>
+    <div class="lecturediv">
+      <p class="pline">순서가 있는 목록 : ol</p>
+      <ol type="I" start="1">
+        <li>서론
+          <ol type="1" start="1">
+            <li>이래도 되나</li>
+            <li>되는군</li>
+            <li>연구의 필요성</li>
+          </ol>
+        </li>
+        <li>본론
+          <ol> <!-- order list-->
+            <li>순서가 있는 목록</li>
+            <li>순서가 있는 나열의 경우의 수</li>
+            <li>순서에 상관 없는 나열
+              <ol type="a">
+                <li>오호호</li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>결론
+          <ol type="1">
+            <li>하하하</li>
+          </ol>
+        </li>
+      </ol>
+
+      <p class="pline">순서가 없는 목록 : ul</p>
+      <ul><!-- un-order list-->
+        <li>아아아아</li>
+        <li>이게 진짜 순서가 없지</li>
+      </ul>
+
+      <p class="pline">정의 목록 : dl</p>
+      <dl>
+        <dt>이건 뭐할 때 쓰는거지</dt>
+        <dd>뭐 할 때 쓰는거지??</dd>
+      </dl>
+    </div>
+    <div class="">
+      <img src="./img/0322.png" title="3122 dkdkdkdkdk" />
+    </div>
+    <marquee>
+      <div>
+        <img src="./img/03222.gif" alt="경로깨짐" title="위로 날리는 거죠" />
+        <br>
+        <p style="color: white;">
+          거꾸로 달리는 소년
+        </p>
+      </div>
+      </marquee>
+      <p align="center">
+        <marquee direction="up">
+          <div>
+            <img src="./img/03222.gif" alt="경로깨짐" title="위로 날리는 거죠" />
+            <br>
+            <p style="color: white;">
+              거꾸로 달리는 소년
+            </p>
+          </div>
+          </marquee>
+        </p>
+      <p style="border-top: 2px solid red;">3122김동우</p>
+  </body>
+</html>
+
+<style>
+
+  body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #71BBE8;
+    font-family: 나눔고딕, NanumGothic, 돋움, Dotum;
+  }
+
+  ul{
+    list-style-type :circle;
+  }
+
+  .lecturediv{
+    color: #0B32AA;
+    padding: 5px 9px 8px 9px;
+    background-color: #FFE688;
+  }
+
+  .pline{
+    border-bottom: 2px solid #444;
+    font-size: 21px;
+    font-weight: bold;
+  }
+
+</style>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      var _e01="3103";
+      document.write(_e01);
+      document.write("<hr>");
+      var scope="global";
+      function scopecheck(){
+        var scope="localvar";
+        document.write(scope)
+        document.write("<br>");
+
+      }
+      function e(){
+        alert(_e01);
+        //var _e01="local";
+        alert(_e01);
+      }
+      e();
+    </script>
+  </head>
+  <body>
+    <button type="button" name="button" onclick="document.write(scope);"></button>
+  </body>
+</html>

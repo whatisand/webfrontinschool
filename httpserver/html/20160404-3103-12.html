@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>3103김동우</legend>
+      <form name="e3103" class="" action="http://jhserver.dimigo.hs.kr/exp01.php" method="post">
+        <table>
+          <tr>
+            <td>
+              <label for="id">ID:</label>
+            </td>
+            <td>
+              <input type="text" name="cname" id="id" required="" placeholder="Input your identity name">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="pw">PW:</label>
+            </td>
+            <td>
+              <input type="password" name="pw" id="pw" maxlength="4" required="">
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              date:
+            </td>
+            <td>
+              <input type="date" name="tdate" value="">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              dept:
+            </td>
+            <td>
+              <select class="" name="dept1" size="1">
+                <option value="EB">E-business</option>
+                <option value="DC">Digital Contents</option>
+                <option value="WP">Web Programming</option>
+                <option value="HB">Hacking Deffence</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              학과2:
+            </td>
+            <td>
+              <input type="text" name="dlist" list="ddl">
+              <datalist id="ddl">
+                <option value="E-Business">
+                <option value="Digital Contents">
+                <option value="Web Programming">
+                <option value="Hacking Deffence">
+              </datalist>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color:green;">
+              <input type="hidden" name="hn" value="3103">
+            </td>
+            <td>
+              <input type="submit" name="submit" value="전송">
+              <input type="reset" value="Reset">
+            </td>
+          </tr>
+        </table>
+      </form>
+    </fieldset>
+  </body>
+</html>

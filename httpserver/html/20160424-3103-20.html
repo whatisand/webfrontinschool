@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- 4/25 webprogramming -->
+    <meta charset="utf-8">
+    <title></title>
+
+    <style>
+      body{
+        font-family: sans-serif;
+        margin: 0 auto;
+
+      }
+
+      p{
+        border-bottom: black 2px solid;
+      }
+      #con1{
+        width: 700px;
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: pink;
+        padding: 5px;
+
+      }
+      #login{
+        background-color: #DB7093;
+        padding: 5px;
+      }
+
+      #loginin{
+        background-color: #EE008c;
+      }
+
+      input[type="submit"] {
+        border: 0;
+        background-color: white;
+        width: 60px;
+        height: 32px;
+        margin-left: 20px;
+      }
+
+      .input_a{
+        background-color: none;
+        border: 0;
+        border-bottom: black 2px dashed;
+      }
+
+      footer div{
+        background-color: black;
+        color: white;
+        text-align: center;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="con1">
+      <div id="login">
+        <p>
+          E-business Dongwoo Kim
+        </p>
+        <div id="loginin">
+          <form class="" action="http://jhserver.dimigo.hs.kr/exp05.php" method="post">
+              <fieldset>
+                <legend>3103 Dongwoo Kim</legend>
+                ID <input class="input_a" type="text" name="s_id" required="" maxlength="10" size="10">
+                PW <input class="input_a" type="password" name="pw" size="10" maxlength="4" required="">
+                일반:<input type="radio" name="grp" value="T">
+                학생:<input type="radio" name="grp" value="S" checked="">
+                <input type="submit" value="login">
+
+              </fieldset>
+          </form>
+        </div>
+      </div>
+      <footer>
+        <div>
+          2016 04 24 월요일 16:00 &copy;
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

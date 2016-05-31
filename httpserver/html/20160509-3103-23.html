@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>20160509-3103</title>
+    <link rel="stylesheet" href="/css/3103-0509.css" charset="utf-8">
+
+    <style>
+      .dropdown{
+        position: relative;
+        display: inline-block;
+
+      }
+      .dropbtn{
+        /*background-color: green;*/
+        color: white;
+        padding: 16px;
+        font-size: 16pt;
+        border: none;
+        cursor: pointer;
+      }
+      .dropdown-contents{
+        display: none;
+        position: absolute;
+        background-color: #ddd;
+        /*min-width: 160px;*/
+        min-width: 110px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      }
+      .dropdown:hover .dropdown-contents{
+        display: block;
+      }
+      .dropdown-contents a{
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      .dropdown-contents a:hover{
+        /*background-color: magenta;*/
+        background-color: #ee008c;
+        color: white;
+      }
+      .dropdown:hover .dropbtn{
+        background-color: red;
+      }
+      /*
+      .menu-container{
+        position: absolute;
+        top: 13px;
+        right: 18px;
+      }*/
+    </style>
+
+  </head>
+  <body>
+    <div class="menu-container">
+      <div class="dropdown">
+        <button class="dropbtn" type="button" name="button">MENU1</button>
+        <div class="dropdown-contents">
+          <a href="#">LINK1</a>
+          <a href="#">LINK2</a>
+          <a href="#">LINK3</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn" type="button" name="button">MENU1</button>
+        <div class="dropdown-contents">
+          <a href="#">LINK1</a>
+          <a href="#">LINK2</a>
+          <a href="#">LINK3</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn" type="button" name="button">MENU1</button>
+        <div class="dropdown-contents">
+          <a href="#">LINK1</a>
+          <a href="#">LINK2</a>
+          <a href="#">LINK3</a>
+        </div>
+      </div>
+    </div>
+    <p style="border-top:dashed 2px blue; text-align:right;">
+      3103 김동우
+    </p>
+  </body>
+</html>

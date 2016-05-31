@@ -1,0 +1,89 @@
+/*3103 김동우*/
+
+html{
+  font-family: arial;
+  font-size: 12pt;
+  font-weight: bold;
+
+}
+
+#wrap{
+  width: 960px;
+  /*padding: 10px;*/
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: auto;
+}
+
+#head{
+  width: 920px;
+  height: 100px;
+  background-color: #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+#left{
+  float: left;
+}
+
+#left1{
+  /*display: inline-block;*/
+  width: 120px;
+  height: 130px;
+  background-color: #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+
+
+}
+#left2{
+
+  /*display: inline-block;*/
+  width: 120px;
+  height: 450px;
+  background-color: #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+
+}
+
+#content{
+  float: left;
+
+  /*margin-left: -170px*/
+  width: 790px;
+  height: 610px;
+  /*display: inline-block;*/
+  background-image: url("http://jhserver.dimigo.hs.kr/dimigo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+#content p{
+
+  border-bottom: 1px maroon solid;
+
+}
+
+input{
+  border: none;
+  border-bottom: 1px maroon dashed;
+  outline: none;
+}
+form{
+  display: inline-block;
+}
+
+#footer{
+  clear: both;
+  background-color: #ccc;
+  text-align: right;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}

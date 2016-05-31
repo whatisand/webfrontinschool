@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>3103 김동우</title>
+  </head>
+  <body>
+    <h2>3103 Kim Dongwoo <sub>3103</sub> Web Programming </h2>
+    <form action="http://jhserver.dimigo.hs.kr/exp03.php" method="post">
+      <table border="1">
+        <tr>
+          <th>
+            학번 :
+          </th>
+          <td>
+            <input type="text" name="c_name" maxlength="4" placeholder="3###" required="">
+          </td>
+          <td rowspan="6">
+            <img src="http://jhserver.dimigo.hs.kr/question.jpg" alt="" />
+          </td>
+        </tr>
+        <tr>
+          <th>
+            Password :
+          </th>
+          <td>
+            <input type="password" name="pw" maxlength="4" required="">
+          </td>
+        </tr>
+        <tr>
+          <th>
+            Department :
+          </th>
+          <td>
+            <select size="1" name="dept">
+              <option value="EB">E-business</option>
+              <option value="DC">Digital Contents</option>
+              <option value="WP">Web Programming</option>
+              <option value="HB">Hacking Deffence</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>
+            선택과목 
+          </th>
+          <td>
+            <input type="checkbox" name="sub[]" value="국어">국어
+            <input type="checkbox" name="sub[]" value="수학(가)">수학가
+            <input type="checkbox" name="sub[]" value="수학(나)">수학나
+            <input type="checkbox" name="sub[]" value="영어">영어
+            <input type="checkbox" name="sub[]" value="사회탐구">사회탐구
+            <input type="checkbox" name="sub[]" value="직업탐구">직업탐구
+          </td>
+        </tr>
+        <tr>
+          <th>
+            Memo :
+          </th>
+          <td>
+            <textarea name="tarea" rows="20" cols="80" placeholder="You can note here. Anything"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #FF3103;">
+
+          </td>
+          <td>
+            <input type="submit"  value="Submit">
+            <input type="reset" value="Reset">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
