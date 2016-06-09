@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- by Kim Dongwoo
+in Dimigo Web Programming Lecture
+20160608-
+-->
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      function butf(){
+        var score=tt.value;
+        // alert(score+10); //score가 문제열이여서 그런지 수로 더해지는게 아니라 10이라는 문자가 뒤에 붙어버린다...
+        //alert(score-10); // -연산자는 숫자 우선이 되버리네?
+        if(score>=90){
+          //document.write("A");
+          alert("A");
+          //fm.jum.value=""; //초기화하는부분ㅎㅎ
+        }
+        else if(score>=80){
+          alert("B")
+        }
+        else if(score>=70){
+          alert("C")
+        }
+        else{
+          //document.write("F");
+          alert("F");
+          //fm.jum.value=""; //초기화하는부분
+        }
+      }
+      function f2(){
+        switch (fm.class1.value-0) {
+          case 1:
+            alert("EB");
+            break;
+          case 2:
+            alert("DC");
+            break;
+          case 3:
+            alert("WP");
+            break;
+          case 4:
+            alert("WP");
+            break;
+          case 5:
+            alert("HD");
+            break;
+          case 6:
+            alert("HD");
+            break;
+          default:
+          alert("알맞은 값을 입력해주세요(1~6)");
+        }
+      }
+
+      //위엣것을 삼항연산자 써서 하는거도 했는데 귀찮음
+
+      //score>90?alert("A"):alert("F");
+
+      //귀찮아도 하라면 해야지...
+    </script>
+  </head>
+  <body>
+    <form name="fm" class="" action="index.html" method="post">
+      점수 : <input type="text" name="jum" value="" size="4">
+      <button onclick="butf()" type="button" name="button1">test</button>
+      <input type="text" name="class1" size="2" value="" maxlength="1">
+      <button onclick="f2();" type="button">test2</button>
+      <!-- <input type="button" name="name" value=""> -->
+    </form>
+    <input type="text" id="tt" value="">
+  </body>
+</html>
