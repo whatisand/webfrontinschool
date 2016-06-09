@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- by 김동우
+수업시간에 연습한것입니당 ㅎㅎㅎ  -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      function f(){
+        var numinp=frm.num.value;
+        var sum=0;
+        for(var i=0;i<=numinp;i++){
+          if((i%2)==0){
+            continue;
+          }
+          sum=sum+i;
+        }
+        alert(sum);
+      }
+
+      function f2(){
+        var num2=frm.num.value;
+        num2=num2-0;
+        var sum=0;
+        var i =0;
+        while (i<=num2) {//while 으로 바꾼 for
+          sum=sum+i;
+          i++;
+        }
+        alert(sum);
+      }
+
+      function f3(){ //do ~while 이 한번은 무조건 실행되는건 누구나 아는 사실이잖아?
+        do{
+          sum=sum+i;
+          i++;
+        }while (i<=num2);
+      }
+      //for문에서 continue, break 쓰는 것 함
+    </script>
+  </head>
+  <body>
+    <form name="frm">
+      <input type="text" name="num" value="">
+      <button type="button" onclick="f();">et</button>
+      <button type="button" onclick="f2();">et2</button>
+    </form>
+  </body>
+</html>
