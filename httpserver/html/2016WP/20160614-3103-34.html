@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>3103 김동우</title>
+    <script>
+      function f3103(){
+        var num=fm3103.c_num.value;
+        var s_name=fm3103.c_name.value;
+        var numm=num+""; //이게 더 쉽지 않나...
+        if(num==""||s_name==""){
+          alert("올바른 값을 입력해주세요");
+      }
+        else if (numm[0]>'3'||numm[0]<'1') {
+            alert(numm[0]+"학년은 없습니다. 확인부탁드립니다.");
+          }
+        else {
+
+          var returntxt="";
+          //alert(typeof(numm[1]));
+          //alert(numm[1]=='8');
+          // var num1=parseInt(num/1000); //소수의 정수화 -> 버림연산인가?
+          // var num2=parseInt((num%1000)/100);
+          // var num3=parseInt((num%100)/10);
+          // var num4=parseInt(num%10); //더 쉬운방법이 있음.
+          switch (numm[1]) {
+            case '1':
+              returntxt+="이비즈니스과";
+              alert(numm[0]+"학년 "+numm[1]+"반 "+returntxt+s_name+" 님 환영합니다.");
+              break;
+            case '2':
+              returntxt+="디지털컨텐츠과";
+              alert(numm[0]+"학년 "+numm[1]+"반 "+returntxt+s_name+" 님 환영합니다.");
+              break;
+
+            case '3'||'4':
+              returntxt+="웹프로그래밍과";
+              alert(numm[0]+"학년 "+numm[1]+"반 "+returntxt+s_name+" 님 환영합니다.");
+              break;
+            case '5'||'6':
+              returntxt+="해킹방어과";
+              alert(numm[0]+"학년 "+numm[1]+"반 "+returntxt+s_name+" 님 환영합니다.");
+              break;
+            default:
+            alert(numm[1]+"는 바르지 않은 반입니다."+returntxt);
+
+          }
+        }
+      }
+
+    </script>
+    <style>
+      p{
+        border-bottom: 1px solid maroon;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      3103 김동우
+    </p>
+    <form name="fm3103" class="" action="index.html" method="post">
+      ID Number: <input type="text" name="c_num" value="" maxlength="4" required="" placeholder="학번">
+      Name: <input type="text" name="c_name" value="" required="" placeholder="이름">
+      <button type="button" onclick="f3103();">check</button>
+    </form>
+  </body>
+</html>
