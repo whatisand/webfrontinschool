@@ -1,0 +1,56 @@
+<!-- 최대공약수 최소공배수 할듯? -->
+<!-- KDMHS 13 김동우 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>3103 Kim Dongwoo</title>
+    <script>
+      function gcd(a, b){
+
+      }
+      function lcm(a, b){
+
+      }
+      function inp1click(){
+        var num1=inp.txtA.value;
+        var num2=inp.txtB.value;
+        if (num1==""||num2=="") {
+          alert("입력해주십시오");
+        }
+        else {
+          var tmp1=parseInt(num1);
+          var tmp2=parseInt(num2);
+          var tmp3=0;
+          //최대공약수, 최소공배수 부분
+          while (tmp1) {
+            if (tmp1<tmp2) {
+              tmp3=tmp1;
+              tmp1=tmp2;
+              tmp2=tmp3;
+            }
+            tmp1-=tmp2;
+          }
+          var lcm = (parseInt(num1)*parseInt(num2))/tmp2;
+          alert("LCM :"+lcm+"\nGCM :"+tmp2);
+        }
+      }
+    </script>
+    <style>
+      p{
+        border-bottom: 1px red solid;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      두 수의 최대공약수와 최소공배수를 구합니다.3103KDW<br>
+      두 수를 입력하세요!
+    </p>
+    <form name="inp">
+      A:<input type="text" name="txtA" value="" required="">
+      B:<input type="text" name="txtB" value="" required="">
+      <button type="button" name="button" onclick="inp1click();">Go</button>
+    </form>
+  </body>
+</html>
