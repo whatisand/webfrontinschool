@@ -12,35 +12,40 @@ by Kim Dongwoo
     <script>
       function sosu(){
         var a = parseInt(inp.txtA.value);
-        var sum=0;
-        var k=2;
-        var j=2;
-        var coun=0;
-        var txt="소수는 :";
+        if(a<1000){
+          var sum=0;
+          var k=2;
+          var j=2;
+          var coun=0;
+          var txt="소수는 :";
 
-        while(1){
-          if(k%j==0){
-            if(k==j){
-              sum+=k;
-              coun++;
-              txt+=k+","
+          while(1){
+            if(k%j==0){
+              if(k==j){
+                sum+=k;
+                coun++;
+                txt+=k+","
+              }
+            }
+            else{
+              j+=1;
+              continue;
+            }
+
+            if(k<a){
+              k+=1;
+              j=2;
+              continue;
+            }
+            else{
+              break;
             }
           }
-          else{
-            j+=1;
-            continue;
-          }
-
-          if(k<a){
-            k+=1;
-            j=2;
-            continue;
-          }
-          else{
-            break;
-          }
+          alert("소수의 합 :"+sum+"\n소수는 "+coun+"개 이고\n "+txt+"가 있습니다.");
         }
-        alert("소수의 합 :"+sum+"\n소수는 "+coun+"개 이고\n "+txt+"가 있습니다.");
+      }
+      else{
+        alert("Less then 1000");
       }
     </script>
   </head>
