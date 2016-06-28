@@ -1,0 +1,29 @@
+<!DOCTYPE html> <html>
+<head>
+  <meta charset="utf-8">
+  <style type="text/css">
+    div {border: 1px solid pink; }
+  </style>
+</head>
+<body oncontextmenu="return false;">
+  <div>
+    <h2>click here to clone me</h2>
+  </div>
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script language="JavaScript">
+    jQuery(document).ready(function() { $('h2').bind('mousedown', function(event) {
+      switch(event.which) {
+        case 1: // left button
+          alert('왼쪽 버튼을 눌렀군요');
+          break;
+        case 2: // middle button
+          alert('가운데 버튼을 눌렀군요');
+          break;
+        case 3: // right button
+          alert('오른쪽 버튼을 눌렀군요');
+          break;
+      }});
+    });
+    </script>
+</body>
+</html>

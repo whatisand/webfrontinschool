@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MOUSE EVENT</title>
+    <style type="text/css">
+      div {
+        width: 500px;
+        height: 300px;
+        border: 1px solid black;
+      }
+    </style>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  </head>
+  <body>
+    <div></div>
+    <h3></h3>
+    <h4></h4>
+    <script type="text/javascript">
+      $('div').mousemove(function(event){
+        $('h3').html("(" + event.pageX + ", " + ev.pageY + ")");
+
+        var offset = $('div').offset();
+
+        $('h4').html("(" + (event.pageX-offset.left) + ", " + (event.pageY-offset.top) + ")");
+      });
+    </script>
+  </body>
+</html>
