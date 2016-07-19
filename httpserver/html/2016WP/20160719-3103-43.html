@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      function showcoords(event){
+        var x = event.clientX;
+        var y = event.clientY;
+        alert("X: "+x + " Y: "+y);
+      }
+      function coords(event) {
+        var x = event.screenX;
+        var y = event.screenY;
+        alert("X: "+x + " Y: "+y);
+      }
+    </script>
+  </head>
+  <body>
+    <p onmousedown="showcoords(event)">
+        Click this paragraph, and an alertbox will alert the x and y coordinates of the mouse pointer.
+    </p>
+    <p onmousedown="coords(event)">
+      Click this paragraph, and an alertbox will alert the x and y coordinates of the cursor, relative to the screen.
+    </p>
+  </body>
+</html>

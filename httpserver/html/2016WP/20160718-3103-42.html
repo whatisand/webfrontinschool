@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+
+    </style>
+    <script>
+      function bgcolorchange(a) {
+        if (a.bg.selectedIndex!=0) {
+          document.bg.bgColor
+          =a.bg.options[a.bg.selectedIndex].value;
+        }
+      }
+      function ftcolorchange(a) {
+        if (a.bg.selectedIndex!=0) {
+          document.bg.bgColor
+          =a.bg.options[a.bg.selectedIndex].value;
+        }
+      }
+      function htchange(a) {
+        if (a.bg.selectedIndex!=0) {
+          document.bg.bgColor
+          =a.bg.options[a.bg.selectedIndex].value;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <select  size="1" name="bg" onchange="bgcolorchange(this.form);">
+      <option selected="">배경</option>
+      <option value="red">r</option>
+      <option value="blue">b</option>
+      <option value="white">wh</option>
+      <option value="yellow">y</option>
+    </select>
+  </body>
+</html>

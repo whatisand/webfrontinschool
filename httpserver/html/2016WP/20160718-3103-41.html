@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      #layerpop{
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        border: 1px solid red;
+        padding: 10px;
+        display: none;
+        background-color: yellow;
+      }
+      .close{
+        
+      }
+    </style>
+    <script>
+      function openLayer(Id, tpos, lpos){
+        var pop=document.getElementById(Id);
+        pop.style.display="block";
+        pop.style.top=tpos+"px";
+        pop.style.left=lpos+"px";
+      }
+      function closeLayer(Id) {
+        var pop=document.getElementById(Id);
+        pop.style.display="none";
+      }
+    </script>
+  </head>
+  <body>
+    <a href="#" onclick="openLayer('layerpop',100,100);">
+      open
+    </a>
+      <div id="layerpop">
+        <b>3103 김동우</b>
+        <ol type="I">
+          <li>E-business 3학년dkdkdkdkdk</li>
+          <li>네이어파법asdmfklasjdflk</li>
+          <li>2016년 7월 열여덜일 월요일 sfjklafsdl</li>
+        </ol>
+        <a href="#" onclick="closeLayer('layerpop');">close</a>
+      </div>
+  </body>
+</html>
